@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner's Method - CubeChampCamp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      color: #1a73e8;
+    }
+    .step {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .step:hover {
+      transform: scale(1.02);
+    }
+    .cube-gif {
+      width: 100%;
+      max-width: 350px;
+      display: block;
+      margin: 1rem auto;
+    }
+    .move {
+      font-family: monospace;
+      font-size: 1.2rem;
+      background: #eef2f7;
+      display: inline-block;
+      padding: 0.3rem 0.6rem;
+      margin: 0.2rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Beginner's Method Guide</h1>
+    <p>Follow each step to learn the Beginner's Method. Animated visualizations and move sequences help you master solving the cube from any position.</p>
+
+    <div class="step animate__animated animate__fadeInUp">
+      <h2>Step 1: White Cross</h2>
+      <img class="cube-gif" src="" alt="White Cross" />
+      <p>Create a plus sign on the white face, aligning edge pieces with their center colors.</p>
+      <div class="move">F</div>
+      <div class="move">R</div>
+      <div class="move">U</div>
+      <div class="move">R'</div>
+      <div class="move">U'</div>
+    </div>
+
+    <div class="step animate__animated animate__fadeInUp animate__delay-1s">
+      <h2>Step 2: First Layer Corners</h2>
+      <img class="cube-gif" src="" alt="White Corners" />
+      <p>Insert the white corner pieces between the cross edges to complete the first layer.</p>
+      <div class="move">R'</div>
+      <div class="move">D'</div>
+      <div class="move">R</div>
+      <div class="move">D</div>
+    </div>
+
+    <div class="step animate__animated animate__fadeInUp animate__delay-2s">
+      <h2>Step 3: Second Layer Edges</h2>
+      <img class="cube-gif" src="" alt="Second Layer" />
+      <twisty-player id="cubePlayer" puzzle="3x3x3" alg="U R U' R' U' F' U F" control-panel="none" background="checkered" visualization="3D" experimental-stickering></twisty-player>
+
+      <p>Use the right or left algorithm to insert edge pieces into the middle layer.</p>
+      <div class="move">U</div>
+      <div class="move">R</div>
+      <div class="move">U'</div>
+      <div class="move">R'</div>
+      <div class="move">U'</div>
+      <div class="move">F'</div>
+      <div class="move">U</div>
+      <div class="move">F</div>
+    </div>
+
+    <div class="step animate__animated animate__fadeInUp animate__delay-3s">
+      <h2>Step 4: Yellow Cross</h2>
+      <img class="cube-gif" src="" alt="Yellow Cross" />
+      <p>Form a yellow cross on the top layer using the F R U R' U' F' algorithm.</p>
+      <div class="move">F</div>
+      <div class="move">R</div>
+      <div class="move">U</div>
+      <div class="move">R'</div>
+      <div class="move">U'</div>
+      <div class="move">F'</div>
+    </div>
+
+    <div class="step animate__animated animate__fadeInUp animate__delay-4s">
+      <h2>Step 5: Yellow Corners</h2>
+      <img class="cube-gif" src="" alt="Yellow Corners" />
+      <p>Orient the yellow corners using this algorithm multiple times if necessary.</p>
+      <div class="move">R</div>
+      <div class="move">U</div>
+      <div class="move">R'</div>
+      <div class="move">U</div>
+      <div class="move">R</div>
+      <div class="move">U2</div>
+      <div class="move">R'</div>
+    </div>
+
+    <div class="step animate__animated animate__fadeInUp animate__delay-5s">
+      <h2>Step 6: Final Layer Corners</h2>
+      <img class="cube-gif" src="" alt="Corner Permutation" />
+      <p>Permute the corners until they are in the correct position.</p>
+      <div class="move">U</div>
+      <div class="move">R</div>
+      <div class="move">U'</div>
+      <div class="move">L'</div>
+      <div class="move">U</div>
+      <div class="move">R'</div>
+      <div class="move">U'</div>
+      <div class="move">L</div>
+    </div>
+  </div>
+  <script type="module" src="https://cdn.cubing.net/js/twisty.js"></script>
+</body>
+</html>
