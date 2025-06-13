@@ -69,15 +69,19 @@
       <p class="lead">This step doesn't require any algorithms and is intuitive.</p>
     </div>
 
-    <div class="step animate__animated animate__fadeInUp animate__delay-2s">
-      <h2>Step 2: First Layer Corners</h2>
-      <img class="cube-gif" src="" alt="White Corners" />
-      <p>Insert the white corner pieces between the cross edges to complete the first layer.</p>
-      <div class="move">R'</div>
-      <div class="move">D'</div>
-      <div class="move">R</div>
-      <div class="move">D</div>
-    </div>
+    <div class="step animate__animated animate__fadeInUp animate__delay-3s">
+  <h2>Step 3: Second Layer Edges</h2>
+  <twisty-player
+    puzzle="3x3x3"
+    alg="U R U' R' U' F' U F"
+    control-panel="none"
+    background="checkered"
+    visualization="3D"
+    style="width: 350px; height: 350px; display: block; margin: 1rem auto;"
+  ></twisty-player>
+  <p>Use the right or left algorithm to insert edge pieces into the middle layer.</p>
+  ...
+</div>
 
     <div class="step animate__animated animate__fadeInUp animate__delay-3s">
       <h2>Step 3: Second Layer Edges</h2>
